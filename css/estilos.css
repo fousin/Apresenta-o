@@ -7,6 +7,7 @@ body{
 	font-size: 1.2em;
 	font-family: "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
+
 p{
 	text-align: justify;
 }
@@ -15,54 +16,30 @@ header{
 	width: 100%;
 	background: url(../imagens/background.jpg) no-repeat;
 	background-size: cover;
-
-}
-
-header nav div ul li a{
 	color: white;
 }
 
-/* cor toggle */
+
+/* cor menu hamburguer'toggler' */
 .custom-toggler.navbar-toggler {
 	border-color: white;
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-section{
-	margin: 10px;
-}
-footer{
-	width: 100%;
-	padding: 10px;
-	color: white;
-	background: rgba(0, 0, 0, 1.0);
-}
 
 .bg-cinza{
 	background-color: #f3f3f3;
 }
+
 .pad-padrao{
 	text-align: center;
 	padding: 20px;
+}
 
-}
-.margin-botoes{
-	margin-top: 10px;
-}
 .botao-icone{
 	height: 20px;
 	width: 20px;
 	margin-top: 5px;
-}
-
-.cartao{
-	text-align: center;
-}
-
-
-
-#logo{
-	color: white;
 }
 
 #botao{
@@ -70,4 +47,15 @@ footer{
 	height: 50px;
 	right: 40px;
 	bottom: 40px;
+}
+
+section{
+	margin: 10px;
+}
+
+footer{
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background: rgba(0, 0, 0, 1.0);
 }
