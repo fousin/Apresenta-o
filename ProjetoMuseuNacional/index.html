@@ -10,116 +10,160 @@
 		<!--Normalize Css-->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
 		<!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
 		<![endif]-->
 	</head>
 	<body>
-		<div id="container"> <!--Inicio container-->
-			
-			<header>
+		<!---->
+		<header >
+			<nav class="navbar navbar-expand-md ">
 
-				<div id="logo"> <!--Inicio Logo-->
-					<h1><a href="">Museu Nacional</a></h1>
+				<div id="" class=""> <!--Inicio Logo-->
+					<a href="#" class=""><img src="imagens/logo.png" class="img-fluid"></a>
 				</div><!--Fim Logo -->
 
-				<nav>
-					<ul>
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="#">Exposições</a></li>
-						<li><a href="#">Pesquisas</a></li>
-						<li><a href="#">Acervo</a></li>
-						<li><a href="#">Vídeos</a></li>
-						<li><a href="#">Fotos</a></li>
-						<li><a href="#">Contato</a></li>
+				<!--Menu Hamburger-->
+				<button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#nav-target" id="botao-toggle">
+					<div class="d-flex">
+					  <span class="navbar-toggler-icon pt-1"><i class="fa fa-bars botao-icone"></i></span>
+					</div>
+				</button>
+			
+				<!--Navegação-->
+				<div class="collapse navbar-collapse " id="nav-target">
+					<ul class="navbar-nav ml-auto ">
+						<li class="nav-item"><a href="../index.html" class="nav-link btn ">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link btn">Exposições</a></li>
+						<li class="nav-item"><a href="#" class="nav-link btn">Pesquisas</a></li>
+						<li class="nav-item"><a href="#" class="nav-link btn">Acervo</a></li>
+						<li class="nav-item"><a href="#" class="nav-link btn">Vídeos</a></li>
+						<li class="nav-item"><a href="#" class="nav-link btn">Fotos</a></li>
+						<li class="nav-item"><a href="#" class="nav-link btn">Contato</a></li>
 					</ul>
-				</nav>
-			</header>
-
-			<div id="principal"> <!--Inicio Principal--> 
-
-				<div id="conteudo">
-					<section id="capa">
-						<img src="imagens/museu.png">
-					</section>
-					<section id="postagens">
-
-						<article id="video">
-							<h3>Video: Conheça o museu</h3>
-							<iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</article>
-
-						<article id="mapa">
-							<h3>Mapa: Encontre o museu</h3>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2064455939953!2d-43.2287175855394!3d-22.9057550435917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1632187449886!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-						</article>
-
-						<article id="exposicoes">
-							<h3>Exposições</h3>
-							<ul>
-								<li><a href="">Os assustadores insetos</a></li>
-								<li><a href="">O cranio de luzia, a mulher mais antiga do Brasil</a></li>
-								<li><a href="">Preguiça gigante e tigre-dentes-de-sabres</a></li>
-								<li><a href="">Plantas do Brasil Central</a></li>
-								<li><a href="">Teresa Cristina: A Imperatriz Arqueóloga</a></li>
-								<li><a href="">Arte com Dinossauros - Paleoarte</a></li>
-								<li><a href=""><strong>Veja todos (65)</strong></a></li>
-							</ul>
-						</article>
-
-						<article id="historia">
-							<h3>200 Anos de História</h3>
-							<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, </p>
-							<a href=""><strong>Leia Mais..</strong></a>
-						</article>
-
-					</section>
 				</div>
 
-				<aside>
-					<section id="depoimento">
-						<img src="imagens/depoimento.png">
-					</section>	
-					<section id="visita"> <!--Inicio Visita--> 
-						<h4>Faça uma visita</h4>
-						<form>
-							<fieldset>
-								<legend>Selecione uma Data</legend>
-								<label for="data">Data</label>
-								<input type="text" id="data" class="campo" value="dd/mm/aaaa">
+			</nav>
+		</header>	
+		
+		<!---->
+		
+		<div class="container">
+			<section class="">
+				<div class="row ">
+					<div class="col-md-8">
+						<img src="imagens/museu.png" alt="" class="img-fluid mb-2">
+					</div>
+	
+					<div class=" col-md-4 row justify-content-center d-none d-md-block">
+						<img src="imagens/depoimento.png" alt="" class="img-fluid ">
+					</div>
+				</div>
+			</section>
+			<section id="corpo">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-6 ">
+								<h3>Video: Conheça o museu</h3>
+								<div class="embed-responsive embed-responsive-16by9 mb-4">
+									<iframe  src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item"></iframe>
+								</div>
+								<div>
+									<h3>Exposições</h3>
+									<ul>
+										<li><a href="">Os assustadores insetos</a></li>
+										<li><a href="">O cranio de luzia, a mulher mais antiga do Brasil</a></li>
+										<li><a href="">Preguiça gigante e tigre-dentes-de-sabres</a></li>
+										<li><a href="">Plantas do Brasil Central</a></li>
+										<li><a href="">Teresa Cristina: A Imperatriz Arqueóloga</a></li>
+										<li><a href="">Arte com Dinossauros - Paleoarte</a></li>
+										<li><a href=""><strong>Veja todos (65)</strong></a></li>
+									</ul>
+								</div>
+							</div>
 
-								<label for="qtd">Qtd Pessoas</label>
-								<input type="text" id="qtd" value="1" class="campo" style="width: 30px;">
-							</fieldset>
-							<input type="submit" value="Verificar Disponibilidade" class="botao">
+							<div class="col-md-6 ">
+								<h3>Mapa: Encontre o museu</h3>
+								<div class="embed-responsive embed-responsive-16by9 mb-4">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2064455939953!2d-43.2287175855394!3d-22.9057550435917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1632187449886!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" class="embed-responsive-item"></iframe>
+								</div>
 
-						</form>
-					</section><!--Fim Visita--> 
+								<div>
+									<h3>200 Anos de História</h3>
+									<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, </p>
+									<a href=""><strong>Leia Mais..</strong></a>
+								</div>
+							</div>
+						</div>						
+					</div>
+					
+					<div class="col-md-4 row">
+						<section id="visita"> <!--Inicio Visita--> 
+							<div class="mb-4">
+								<h4>Faça uma visita</h4>
+								<h6>Selecione uma Data</h6>
+								<form>
+									<fieldset>
+										<div class="form-row mt-3">
+											
+											<div class="form-group mr-2">
+												<label for="data">Data</label>
+												<input type="text" id="data" class="campo" value="dd/mm/aaaa">
+											</div>
+											
+											<div class="form-group">
+												<label for="qtd">Qtd Pessoas</label>
+												<input type="text" id="qtd" value="1" class="campo" style="width: 30px;">
+											</div>
+										</div>
+										
+									</fieldset>
+									<input type="submit" value="Verificar Disponibilidade" class="botao btn">
+								</form>								
+							</div>
+							<div class="galeria d-flex justify-content-center">
+								<div class="row justify-content-center">
+									<h4>Galeria de Fotos</h4>	
+									<div class="row justify-content-center">
+										<a href=""><img src="imagens/imagem1.jpg" class="img-fluid ml-2 mt-2" alt="Descrição da imagem"></a>
+										<a href=""><img src="imagens/imagem2.jpg" class="img-fluid ml-2 mt-2" alt="Descrição da imagem"></a>
+										<a href=""><img src="imagens/imagem3.jpg" class="img-fluid ml-2 mt-2" alt="Descrição da imagem"></a>
+										<a href=""><img src="imagens/imagem4.jpg" class="img-fluid ml-2 mt-2" alt="Descrição da imagem"></a>
+									</div>
+								</div>
+							</div>
+							
+						</section><!--Fim Visita--> 
+					</div>
 
-					<section id="galeria"><!--Inicio Galeria--> 
-						<h4>Galeria de Fotos</h4>
-						<a href=""><img src="imagens/imagem1.jpg" height="93px" width="93px" alt="Descrição da imagem"></a>
-						<a href=""><img src="imagens/imagem2.jpg" height="93px" width="93px" alt="Descrição da imagem"></a>
-						<a href=""><img src="imagens/imagem3.jpg" height="93px" width="93px" alt="Descrição da imagem"></a>
-						<a href=""><img src="imagens/imagem4.jpg" height="93px" width="93px" alt="Descrição da imagem"></a>
-
-					</section><!--Fim Galeria--> 
-				</aside>
-
-				<footer>
-					<p>
-						<a href="#">Home</a>
-						<a href="#">Exposições</a>
-						<a href="#">Pesquisas</a>
-						<a href="#">Acervo</a>
-						<a href="#">Vídeos</a>
-						<a href="#">Fotos</a>
-						<a href="#">Contato</a>
-					</p>
-					<p>2019 <a href="">Museu Nacional</a> - Todos os direitos reservados</p>
-				</footer>
-
-			</div><!--Fim Principal -->
-		</div><!--Fim Container -->
+					
+				</div>
+			</section>
+			<footer  class="mt-3 text-center">
+				<p>
+					<a href="#" class="ml-2 mr-2">Home</a>
+					<a href="#" class="ml-2 mr-2">Exposições</a>
+					<a href="#" class="ml-2 mr-2">Pesquisas</a>
+					<a href="#" class="ml-2 mr-2">Acervo</a>
+					<a href="#" class="ml-2 mr-2">Vídeos</a>
+					<a href="#" class="ml-2 mr-2">Fotos</a>
+					<a href="#" class="ml-2 mr-2">Contato</a>
+				</p>
+				<p>2019 <a href="">Museu Nacional</a> - Todos os direitos reservados</p>
+			</footer>
+		</div>
+		<!-- JavaScript (Opcional) -->
+      	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
 </html>
