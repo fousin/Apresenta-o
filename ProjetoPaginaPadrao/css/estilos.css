@@ -1,0 +1,65 @@
+body{
+    overflow-x: hidden;
+    
+}
+.back-azul{
+    background-color: rgb(20, 20, 88);
+    color: white;
+}
+.botao{
+    color: white;
+    background-color: #72120B;
+}
+
+.borda{
+    border-radius: 30px;
+}
+.item-whatsapp{
+    background-color: #2ba531;
+}
+.item-chat{
+    background-color: #00b29c;
+}
+
+nav div#nav-target a{
+    color: black;
+    font-family: 'Myriad Pro';
+    font-size: 1.2em;
+}
+nav div#nav-target ul li a:hover{
+    color: white;
+    background: rgb(20, 20, 88);
+    border-radius: 30px;
+}
+
+div.altura-padrao{
+    height: 300px;
+}
+
+.box{
+    font: 45px 'calibri';
+}
+
+.box-2{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.box-2 a{
+    color: white;
+}
+section div.box-2 a:hover{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.divisor{
+    
+	width: 2px;
+	background: white;
+	margin: 12px 15px;
+}
