@@ -1,0 +1,58 @@
+body{
+	background-color: black;
+	overflow-x: hidden;
+}
+ul{
+	list-style: none;
+	text-align: center;
+}
+
+#lateral-le{
+	background: url(../imagens/background-twitter.png) no-repeat ;
+	background-size: cover;
+	
+}
+#lateral-ld{
+	color: white;
+	padding: 20px 30px;
+	
+}
+
+#campo-botoes{
+	width: 400px;
+}
+.botoes{
+	padding: 10px;
+	margin: 10px;
+	border-radius: 30px;
+	width: 300px;
+	background-color: white;
+}
+#ins-celular{
+	background-color: rgb(29, 155, 240);
+	border: 0;
+}
+
+div p{
+	font-size: 0.6em;
+	text-align: justify;
+}
+
+div div ul div li a.botoes{
+	background-color: black;
+	color: rgb(29, 155, 240);
+}
+
+footer li{
+	display: inline-block;
+	font-size: 0.9em;
+	margin: 5px;
+	padding: 5px;
+	
+}
+footer li a{
+	color: rgb(109, 109, 109);
+}
+footer li a:hover{
+	color: rgb(109, 109, 109);
+}
