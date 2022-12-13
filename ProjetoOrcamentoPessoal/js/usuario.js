@@ -95,7 +95,6 @@ function cadastroUsuario(){
         username.value,
         password.value
     )
-debugger
     if(usuario.validarUsuario()){
         bdUsuario.gravar(usuario)
         
