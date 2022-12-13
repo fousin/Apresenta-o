@@ -115,7 +115,7 @@ function verificarUsuario(){
 
     if(resposta){
         console.log('funcionando')
-        window.location.href ='http://127.0.0.1:5500/ProjetoOrcamentoPessoal/cadastro.html'
+        window.location.href ='https://fousin.github.io/Apresentacao/ProjetoOrcamentoPessoal/cadastro.html'
     }else{
         console.log('algo diferente')
         alert('Usuário ou Senha Inválidos')
