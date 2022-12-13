@@ -1,0 +1,11 @@
+#nome-logo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: #fff;
+    font-weight: 800;
+}
+
+.divisor{
+    width: 1px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 12px 15px;
+  }

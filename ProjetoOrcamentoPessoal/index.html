@@ -5,139 +5,139 @@
 		<title>Orçamento pessoal</title>
     <link rel="icon" href="imagens/icone.png">
 
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css/styles.css">
+
 		<!-- Bootstrap-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!--estilo personalizado-->
-    <link rel="stylesheet" href="css/estilos.css">
-
+   
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <!--Script personalizado-->
     <script src="js/app.js"></script>
+    <script src="js/usuario.js"></script>
+    <script>
+      function loadModal(){
+        $('#modalIntro').modal()
+      }
+    </script>
 	</head>
 
-  <body>
-    <div id="botao" class="fixed-bottom ml-auto">
-      <a href="../index.html" class="btn btn-outline-dark btn-lg"><i class="fas fa-home"></i></a>
+  <body onload="loadModal()">
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalIntro" tabindex="-1" role="dialog" aria-labelledby="modalIntro" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalIntroLabel">Olá, seja bem vindo ao Orçamento Pessoal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Esse app tem o objetivo de ser um registrador de gastos, onde você pode cadastrar seus gastos para que possa manter registrado e acompanhar de uma forma mais precisa.</p>
+            <p>No momento, o app está rodando em seu navegador sem um Banco de Dados, mas não se preocupe, tudo que você cadastrar (incluindo usuario), ficará salvo em seu navegador no storagem, uma memória similar ao cache, ou seja, tudo ficará salvo, mesmo que feche o navegador ou desligue seu equipamento</p>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
+
+    <!--Fim ModalIntro-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
       <div class="container">
         <a class="navbar-brand" href="#">
-           <img src="imagens/logo.png" width="50" height="35" alt="Orçamento pessoal">
+          <img src="imagens/logo.png" width="50" height="35" alt="Orçamento pessoal">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="nome-logo" class="mr-3">Orçamento Pessoal</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Cadastro</a>
+            <li class="nav-item" >
+              <a class="nav-link" href="#.html">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="consulta.html">Consulta</a>
+              <a class="nav-link" href="#">Consulta</a>
+            </li>
+            <li class="nav-item divisor"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
             </li>
           </ul>
-          
         </div>
+
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col mb-5">
-          <h1 class="display-4">Registro de nova despesa</h1>
-        </div>
-      </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div>
 
-      <div class="row mb-2">
-        <div class="col-md-2 ">
-          <select class="form-control" id="ano">
-            <option value="">Ano</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-          </select>
+        <div class="mb-2">
+          <img src="imagens/foto-default.jpg" alt="imagem default"  style="border-radius: 8em;">
         </div>
 
-        <div class="col-md-2 ">
-          <select class="form-control" id="mes">
-            <option value="">Mês</option>
-            <option value="1">Janeiro</option>
-            <option value="2">Fevereiro</option>
-            <option value="3">Março</option>
-            <option value="4">Abril</option>
-            <option value="5">Maio</option>
-            <option value="6">Junho</option>
-            <option value="7">Julho</option>
-            <option value="8">Agosto</option>
-            <option value="9">Setembro</option>
-            <option value="10">Outubro</option>
-            <option value="11">Novembro</option>
-            <option value="12">Dezembro</option>
-          </select>
-        </div>
+        <div class="form-group row">
+          <div class="col-12">
+            <input class="form-control align-self-center mb-2" type="text" placeholder="Usuário" id="userLogin">
+            <input class="form-control align-self-center mb-2" type="password" placeholder="Senha" id="userPass">
+            <input class="btn col" type="submit" value="Login" onclick="verificarUsuario()">
+          </div>
+        </div> 
+
+        <!-- Botão para acionar modal -->
+        <span data-toggle="modal" data-target="#modalCadastro" style="color: blue; cursor: pointer;">Cadastre-se</span>
         
-        <div class="col-md-2 ">
-          <input type="text" class="form-control" placeholder="Dia" id="dia" />
-        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
 
-        <div class="col-md-6">
-          <select class="form-control" id="tipo">
-            <option value="">Tipo</option>
-            <option value="1">Alimentação</option>
-            <option value="2">Educação</option>
-            <option value="3">Lazer</option>
-            <option value="4">Saúde</option>
-            <option value="5">Transporte</option>
-          </select>
-        </div>
-      </div>
+                <form action="">
 
-      <div class="row">
-        <div class="col-md-8">
-          <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
-        </div>
+                  <div class="form-group">
+                    <label for="usuario">Usuário</label>
+                    <input id="cadUser" class="form-control" type="text" id="usuario" placeholder="Digite seu usuário" >
+                  </div>
 
-        <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Valor" id="valor" />
-        </div>
-
-        <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary" onclick="cadastrarDespesa()">
-            <i class="fas fa-plus"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <!-- Modal sucesso -->
-    <div class="modal fade " id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div id="modal_titulo_div">
-            <h5 class="modal-title" id="modalTitulo"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" id="modalConteudo">
-            
-          </div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" id="modalBtn">Voltar</button>
+                  <div class="form-group">
+                    <label for="senha-usuario">Senha</label>
+                    <input id="cadUserPass" class="form-control " type="password" id="senha-usuario" placeholder="Digite sua senha">
+                  </div>
+                  
+                </form>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="cadastroUsuario()">Cadastrar</button>
+              </div>
+            </div>
           </div>
         </div>
+
+
       </div>
     </div>
 
     <!--Scripts-->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
