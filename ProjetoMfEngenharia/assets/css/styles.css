@@ -1,6 +1,7 @@
 body{
     width: 99%;
     background-color: #fafafa;
+    overflow-x: hidden;
 }
 
 #botao{
