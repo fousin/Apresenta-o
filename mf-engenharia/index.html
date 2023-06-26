@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MF ENGENHARIAS</title>
+    
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pathway+Extreme:wght@300;400&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!--Estilo proprio-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+</head>
+<body>
+    <div id="botao" class="fixed-bottom ml-auto ">
+        <a href="https://api.whatsapp.com/send?phone=5571982058550&text=Ol%C3%A1%2C%20Vim%20pela%20pagina%20de%20apresenta%C3%A7%C3%A3o." target="_blank" class="btn btn-success btn-lg rounded-circle"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 d-flex justify-content-center" >
+                    <a href="#" class="navbar-brand">
+                        <img src="assets/img/mf-logo.png" width="142px">
+                        <span class="display-3 logo">MF ENGENHARIAS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--barra de navegação-->
+    <nav class="navbar navbar-expand-sm bg-menu">
+        <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="list-unstyled navbar-nav ml-auto mr-auto">
+                <li class="nav-item menu"><a class="nav-link" >INICIO</a></li>
+                <li class="nav-item menu"><a class="nav-link"  onclick="toServicos()">SERVIÇOS</a></li>
+                <li class="nav-item menu"><a class="nav-link"  onclick="toSobre()">SOBRE</a></li>
+                <li class="nav-item menu"><a class="nav-link"  onclick="toContato()">CONTATO</a></li>
+                <li class="nav-item menu"><a class="nav-link"  onclick="toMapa()">MAPA</a></li>
+            </ul>
+        </di>
+    </nav>
+
+    <!--carousel-->
+    <section id="inicio" class="" >
+        <div class="align-self-center capa d-flex ">
+           
+            <div id="carousel-imagens" class="carousel slide" data-ride="carousel" >
+                <div class="carousel-inner"> <!--Inner-->
+
+                    <div class="carousel-item active imagem-carrousel">
+                        <img src="assets/img/pred01.jpg" alt="imagen de um predio" style="width: 100%;">
+                    </div>
+    
+                    <div class="carousel-item imagem-carrousel">
+                        <img src="assets/img/pred02.jpg" alt="imagen de um predio" style="width: 100%;">
+                    </div>
+
+                    <div class="carousel-item imagem-carrousel">
+                        <img src="assets/img/pred03.jpg" alt="imagen de um predio" style="width: 100%;">
+                    </div>
+
+                </div><!--FIm inner-->
+
+                <!--Controle carousel -->
+                <a href="#carousel-imagens" class="carousel-control-prev" data-slide="prev"><i class="fas fa-angle-left fa-3x"></i></a>
+                <a href="#carousel-imagens" class="carousel-control-next" data-slide="next"><i class="fas fa-angle-right fa-3x"></i></a>
+                
+                <ol class="carousel-indicators">
+                    <li data-target="#meuCarrossel" data-slide-to="0" class="active"></li>
+                    <li data-target="#meuCarrossel" data-slide-to="1"></li>
+                    <li data-target="#meuCarrossel" data-slide-to="2"></li>
+                </ol>
+                
+            </div><!--FIm Carousel-->
+                
+            
+            
+        </div>
+    </section>
+
+
+    <section id="servicos">
+        <div class="col-12 d-flex justify-content-center mt-3 mb-3 p-2 bg-menu">
+            <h3 class="sessoes-menu">SERVIÇOS</h3>
+        </div>
+
+        <div class="row ">
+            <div class="col-12 bg-textos ">
+                <div class="container">
+                    <div class="cards col-sm-12 col-md-6">
+                        <div class="float-left ml-3 mr-3 div-card-img">
+                            <img src="/assets/img/projetos.webp" alt="img default" class="rounded-circle imagens-cards">
+                        </div>
+                        <div class="float-right">
+                            <h3>Projetos</h3>
+                            <ul>
+                                <li>Projetos Mecânicos</li>                       
+                                <li>Projetos Estruturais</li>                       
+                                <li>Projetos SST</li>                        
+                                <li>Prevenção e Combate a Incêndio</li>
+                                <li>Projetos HVAC - Climatização</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cards col-sm-12 col-md-6 mt-3">
+                        <div class="float-left ml-3 mr-3 div-card-img">
+                            <img src="/assets/img/analise-estrutural.webp" alt="img default" class="rounded-circle imagens-cards">
+                        </div>
+                        <div class="float-right">
+                            <h3>Análise Estrutural</h3>
+                            <ul>
+                                <li>Análise por MEF ​</li>
+                                <li>Análise de Carga</li>
+                                <li>Análise de Tensão</li>
+                                <li>Análise de Pressão</li>
+                                <li>Análise de  Torção</li>
+                                <li>Análise de Temperatura</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cards col-sm-12 col-md-6">
+                        <div class="float-left ml-3 mr-3 div-card-img" >
+                            <img src="/assets/img/inspecoes.jpg" alt="img default" class="rounded-circle imagens-cards">
+                        </div>
+                        <div class="float-right">
+                            <h3>Inspeções</h3>
+                            <ul>
+                                <li>NR 10</li>
+                                <li>NR 11</li>
+                                <li>NR 12</li>
+                                <li>NR 18</li>
+                                <li>NR 35</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cards col-sm-12 col-md-6">
+                        <div class="float-left ml-3 mr-3">
+                            <img src="/assets/img/levantamento.webp" alt="img default" class="rounded-circle imagens-cards">
+                        </div>
+                        <div class="float-right">
+                            <h3>Levantamento In Loco</h3>
+                            <ul>
+                                <li>Levantamento Arquitetônico</li>                       
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre"> 
+        <div class="col-12 d-flex justify-content-center mt-3 mb-3 p-2 bg-menu">
+            <h3 class="sessoes-menu">Quem Somos?</h3>
+        </div>
+
+        <div class="container">
+            <div class="bg-textos infos">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla totam pariatur minima distinctio eos inventore non cupiditate deserunt nihil libero architecto nam fugiat itaque, nostrum quasi aut tempora, ut sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis ipsum id laborum culpa nemo quos enim nesciunt ratione nobis, cupiditate omnis quaerat maiores sequi esse necessitatibus laboriosam molestiae odit!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla totam pariatur minima distinctio eos inventore non cupiditate deserunt nihil libero architecto nam fugiat itaque, nostrum quasi aut tempora, ut sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis ipsum id laborum culpa nemo quos enim nesciunt ratione nobis, cupiditate omnis quaerat maiores sequi esse necessitatibus laboriosam molestiae odit!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla totam pariatur minima distinctio eos inventore non cupiditate deserunt nihil libero architecto nam fugiat itaque, nostrum quasi aut tempora, ut sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis ipsum id laborum culpa nemo quos enim nesciunt ratione nobis, cupiditate omnis quaerat maiores sequi esse necessitatibus laboriosam molestiae odit!</p>
+            </div>
+
+        </div>
+        
+
+    </section>
+
+    <section>
+        <div>
+            <img src="/assets/img/equipe.jpg" alt="equipe" style="width: 100%;">
+        </div>
+        
+    </section>
+
+    <section id="contato">
+        <div class="col-12 d-flex justify-content-center mt-3 mb-3 p-2 bg-menu">
+            <h3 class="sessoes-menu">Entre em Contato</h3>
+        </div>
+
+        <div class="">
+            <form action="">
+                <div class="container text-center">
+                    <div class="form-group">
+                        <label for="nome">
+                            <input type="text" placeholder="NOME" name="nome" class="form-control text-input">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">
+                            <input type="text" placeholder="71988888888" name="telefone" class="form-control text-input">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <input type="email" placeholder="SEUEMAIL@EMAIL.COM" name="email" class="form-control text-input">
+                        </label>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label for="assunto">
+                            <input type="text" placeholder="ASSUNTO" name="assunto" class="form-control text-input">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">
+                            <input type="text" placeholder="DIGITE SEU TEXTO AQUI" name="mensagem" class="form-control text-input">
+                        </label>
+                    </div>
+                
+                    <input type="submit" class="btn btn-lg btn-outline-dark">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section id="mapa">
+        <div class="col-12 d-flex justify-content-center mt-3 mb-3 p-2 bg-menu">
+            <h3 class="sessoes-menu">Onde estamos</h3>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2064455939953!2d-43.2287175855394!3d-22.9057550435917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1632187449886!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" class="embed-responsive-item"></iframe>
+        </div>
+    </section>
+    
+    
+    <footer class="mt-4 mb-4 rodape">
+      <div class="container itens-rodape">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              <a class="ml-2" onclick="toInicio()">Home</a>
+              <a class="ml-2" onclick="toServicos()">Serviços</a>
+              <a class="ml-2" onclick="toSobre()">Sobre</a>
+              <a class="ml-2" onclick="toContato()">Contato</a>
+              <a class="ml-2" onclick="toMapa()">Onde Estamos</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-end">
+            <a href="" class="btn btn-outline-light"><i class="fab fa-facebook "></i></a>
+            <a href="" class="btn btn-outline-light"><i class="fab fa-twitter ml-2"></i></a>
+            <a href="" class="btn btn-outline-light"><i class="fab fa-instagram ml-2"></i></a>
+            <a href="" class="btn btn-outline-light"><i class="fab fa-youtube ml-2 "></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

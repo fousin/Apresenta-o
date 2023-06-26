@@ -1,0 +1,106 @@
+body{
+    width: 99%;
+    background-color: #fafafa;
+}
+
+#botao{
+	width: 50px;
+	height: 50px;
+	right: 40px;
+	bottom: 40px;
+}
+
+.logo{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #802D38;
+}
+
+.bg-menu{
+    background-color: #802D38;
+}
+
+.bg-textos{
+    background-color: #fff;
+}
+
+.menu{
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.sessoes-menu{
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3em;
+    margin: 0 10px;
+    color: #fff;
+}
+
+nav ul li {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    color:#8a656a;
+    text-decoration: underline;
+}
+
+section#inicio{
+    align-self: center;
+}
+.imagem-carrousel{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cards{
+    display: inline-flex;
+    margin: 5px;
+    height: 180pt;
+    width: 400pt;
+    border-radius: 60px;
+    border: 1px solid rgb(102, 49, 49);
+}
+
+.div-card-img{
+    height: 200px;
+    width: 250px;
+}
+
+.imagens-cards{
+    margin: 20pt;
+    width: 80%;
+    height: auto;
+}
+
+.infos{
+    padding: 20px;
+    color: #5f252d;
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: 'Pathway Extreme', 'arial', sans-serif;
+}
+
+.text-input{
+    width: 400pt;
+}
+
+.rodape{
+    background-color: #802D38;
+    height: 40pt;
+}
+
+.itens-rodape{
+    padding: 5pt;
+    cursor: pointer;
+}
+
+footer div p {
+    padding-top: 5pt;
+    color: #fff;
+}
